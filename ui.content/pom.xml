@@ -53,13 +53,13 @@
                     <packageType>content</packageType>
                     <accessControlHandling>merge</accessControlHandling>
                     <properties>
-                        <cloudManagerTarget>none</cloudManagerTarget>>
+                        <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
                     <dependencies>
                         <dependency>
                             <groupId>com.aem632</groupId>
                             <artifactId>aem-aem632-project.ui.apps</artifactId>
-                            <version>0.0.1-SNAPSHOT</version>
+                            <version>${project.version}</version>
                         </dependency>
                     </dependencies>
                 </configuration>
@@ -83,18 +83,17 @@
         <dependency>
             <groupId>com.aem632</groupId>
             <artifactId>aem-aem632-project.core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.aem632</groupId>
             <artifactId>aem-aem632-project.ui.apps</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${project.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.aem</groupId>
-            <artifactId>uber-jar</artifactId>
-            <classifier>apis</classifier>
+            <artifactId>aem-sdk-api</artifactId>
         </dependency>
     </dependencies>
 </project>

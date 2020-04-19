@@ -49,7 +49,7 @@
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
-                    <group>my_packages</group>
+                    <group>com.aem632</group>
                     <embeddeds>
                         <embedded>
                             <groupId>com.aem632</groupId>
@@ -75,13 +75,9 @@
                             <type>zip</type>
                             <target>/apps/aem632-vendor-packages/application/install</target>
                         </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.examples</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aem632-vendor-packages/content/install</target>
-                        </embedded>
                     </embeddeds>
+                    <subPackages>
+                    </subPackages>
                 </configuration>
             </plugin>
             <plugin>
@@ -99,7 +95,7 @@
                 <executions>
                     <execution>
                         <id>auto-clean</id>
-                        <phase>install</phase>
+                        <phase>initialize</phase>
                         <goals>
                             <goal>clean</goal>
                         </goals>
@@ -174,15 +170,16 @@
         <dependency>
             <groupId>com.aem632</groupId>
             <artifactId>aem-aem632-project.ui.apps</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${project.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.aem632</groupId>
             <artifactId>aem-aem632-project.ui.content</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${project.version}</version>
             <type>zip</type>
         </dependency>
+
 
         <dependency>
             <groupId>com.adobe.cq</groupId>
@@ -192,11 +189,6 @@
         <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.config</artifactId>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.examples</artifactId>
             <type>zip</type>
         </dependency>
     </dependencies>

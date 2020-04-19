@@ -97,21 +97,8 @@ Sling-Test-Regexp: .*Test
 
     <dependencies>
         <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.service.metatype.annotations</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.annotation.bundle</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <scope>provided</scope>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>aem-sdk-api</artifactId>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -134,14 +121,7 @@ Sling-Test-Regexp: .*Test
         <dependency>
             <groupId>com.aem632</groupId>
             <artifactId>aem-aem632-project.core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.adobe.aem</groupId>
-            <artifactId>uber-jar</artifactId>
-            <classifier>apis</classifier>
+            <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
