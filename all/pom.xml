@@ -50,6 +50,12 @@
                 <extensions>true</extensions>
                 <configuration>
                     <group>com.aem632</group>
+
+                    <!-- allowIndexDefinitions is required as acs-aem-commons deploys 
+                         ACLs to /oak:index which is detected as an "index definition", 
+                         even though it's not really an oak index definition -->
+                    <allowIndexDefinitions>true</allowIndexDefinitions>
+
                     <embeddeds>
                         <embedded>
                             <groupId>com.aem632</groupId>
@@ -74,6 +80,18 @@
                             <artifactId>core.wcm.components.config</artifactId>
                             <type>zip</type>
                             <target>/apps/aem632-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.acs</groupId>
+                            <artifactId>acs-aem-commons-ui.apps</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aem632-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.acs</groupId>
+                            <artifactId>acs-aem-commons-ui.content</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aem632-vendor-packages/content/install</target>
                         </embedded>
                     </embeddeds>
                     <subPackages>
@@ -191,5 +209,22 @@
             <artifactId>core.wcm.components.config</artifactId>
             <type>zip</type>
         </dependency>
+
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-ui.content</artifactId>
+            <version>4.5.2</version>
+            <type>zip</type>
+            <classifier>min</classifier> <!-- optional, see below -->
+        </dependency>
+        
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-ui.apps</artifactId>
+            <version>4.5.2</version>
+            <type>zip</type>
+            <classifier>min</classifier> <!-- optional, see below -->
+        </dependency>
+
     </dependencies>
 </project>
