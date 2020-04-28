@@ -48,7 +48,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <group>com.aem632</group>
-                    <name>aem-aem632-project.ui.content</name>
+                    <name>aem-aem632-project.ui.content-prod-publish</name>
                     <packageType>content</packageType>
                     <accessControlHandling>merge</accessControlHandling>
                     <properties>
