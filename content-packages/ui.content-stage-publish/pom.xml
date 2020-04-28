@@ -24,7 +24,7 @@
         <groupId>com.aem632</groupId>
         <artifactId>aem-aem632-project</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <!-- ====================================================================== -->
