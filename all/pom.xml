@@ -57,11 +57,49 @@
                             <type>zip</type>
                             <target>/apps/aem632-packages/application/install</target>
                         </embedded>
+<!--
                         <embedded>
                             <groupId>com.aem632</groupId>
                             <artifactId>aem-aem632-project.ui.content</artifactId>
                             <type>zip</type>
                             <target>/apps/aem632-packages/content/install</target>
+                        </embedded>
+-->
+                        <embedded>
+                            <groupId>com.aem632</groupId>
+                            <artifactId>aem-aem632-project.ui.content-dev-author</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aem632-packages/content/install.dev.author</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.aem632</groupId>
+                            <artifactId>aem-aem632-project.ui.content-dev-publish</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aem632-packages/content/install.dev.publish</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.aem632</groupId>
+                            <artifactId>aem-aem632-project.ui.content-prod-author</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aem632-packages/content/install.prod.author</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.aem632</groupId>
+                            <artifactId>aem-aem632-project.ui.content-prod-publish</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aem632-packages/content/install.prod.publish</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.aem632</groupId>
+                            <artifactId>aem-aem632-project.ui.content-stage-author</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aem632-packages/content/install.stage.author</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.aem632</groupId>
+                            <artifactId>aem-aem632-project.ui.content-stage-publish</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aem632-packages/content/install.stage.publish</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.cq</groupId>
@@ -173,13 +211,50 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
+<!--
         <dependency>
             <groupId>com.aem632</groupId>
             <artifactId>aem-aem632-project.ui.content</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
-
+-->
+        <dependency>
+            <groupId>com.aem632</groupId>
+            <artifactId>aem-aem632-project.ui.content-dev-author</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.aem632</groupId>
+            <artifactId>aem-aem632-project.ui.content-dev-publish</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.aem632</groupId>
+            <artifactId>aem-aem632-project.ui.content-prod-author</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.aem632</groupId>
+            <artifactId>aem-aem632-project.ui.content-prod-publish</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.aem632</groupId>
+            <artifactId>aem-aem632-project.ui.content-stage-author</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.aem632</groupId>
+            <artifactId>aem-aem632-project.ui.content-stage-publish</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
 
         <dependency>
             <groupId>com.adobe.cq</groupId>
