@@ -213,7 +213,7 @@
         <dependency>
             <groupId>com.adobe.acs</groupId>
             <artifactId>acs-aem-commons-ui.content</artifactId>
-            <version>4.5.2</version>
+            <version>4.7.0</version>
             <type>zip</type>
             <classifier>min</classifier> <!-- optional, see below -->
         </dependency>
@@ -221,7 +221,7 @@
         <dependency>
             <groupId>com.adobe.acs</groupId>
             <artifactId>acs-aem-commons-ui.apps</artifactId>
-            <version>4.5.2</version>
+            <version>4.7.0</version>
             <type>zip</type>
             <classifier>min</classifier> <!-- optional, see below -->
         </dependency>
