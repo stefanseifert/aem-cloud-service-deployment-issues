@@ -33,12 +33,8 @@
         <module>it.tests</module>
         <module>it.launcher</module>
         <module>dispatcher</module>
-        <module>content-packages/ui.content-dev-author</module>
-        <module>content-packages/ui.content-dev-publish</module>
-        <module>content-packages/ui.content-prod-author</module>
-        <module>content-packages/ui.content-prod-publish</module>
-        <module>content-packages/ui.content-stage-author</module>
-        <module>content-packages/ui.content-stage-publish</module>
+        <module>content-packages/ui.content-author</module>
+        <module>content-packages/ui.content-publish</module>
     </modules>
 
     <properties>
