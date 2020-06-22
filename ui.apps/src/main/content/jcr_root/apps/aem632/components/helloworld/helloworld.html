@@ -19,7 +19,8 @@
         <p class="cmp-helloworld__item-label">Text property:</p>
         <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${properties.text}</pre>
     </div>
-    <div class="cmp-helloworld__item" data-sly-use.model="com.aem632.core.models.HelloWorldModel" data-sly-test="${model.message}">
+    <!--/* We reference an invalid class name here to reproduce the "long stack trace truncated" problem (PVRND-618) */-->
+    <div class="cmp-helloworld__item" data-sly-use.model="com.aem632.core.models.HelloWorldModel_InvalidClassName" data-sly-test="${model.message}">
         <p class="cmp-helloworld__item-label">Model message:</p>
         <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
     </div>
