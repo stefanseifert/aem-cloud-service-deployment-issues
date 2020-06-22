@@ -28,6 +28,7 @@
         <module>all</module>
         <module>core</module>
         <module>ui.apps</module>
+        <module>ui.bundles</module>
         <module>ui.apps.structure</module>
         <module>ui.content</module>
         <module>it.tests</module>
