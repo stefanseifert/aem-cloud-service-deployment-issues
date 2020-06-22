@@ -57,7 +57,7 @@
                     <dependencies>
                         <dependency>
                             <groupId>com.aem632</groupId>
-                            <artifactId>aem-aem632-project.ui.apps</artifactId>
+                            <artifactId>aem-aem632-project.conf.content-author</artifactId>
                             <version>${project.version}</version>
                         </dependency>
                     </dependencies>
@@ -86,7 +86,7 @@
         </dependency>
         <dependency>
             <groupId>com.aem632</groupId>
-            <artifactId>aem-aem632-project.ui.apps</artifactId>
+            <artifactId>aem-aem632-project.conf.content-author</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>

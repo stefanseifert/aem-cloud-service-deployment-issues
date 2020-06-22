@@ -29,11 +29,12 @@
         <module>core</module>
         <module>ui.apps</module>
         <module>ui.apps.structure</module>
-        <module>ui.content</module>
         <module>it.tests</module>
         <module>it.launcher</module>
         <module>dispatcher</module>
+        <module>content-packages/conf.content-author</module>
         <module>content-packages/ui.content-author</module>
+        <module>content-packages/conf.content-publish</module>
         <module>content-packages/ui.content-publish</module>
     </modules>
 

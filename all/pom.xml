@@ -57,19 +57,23 @@
                             <type>zip</type>
                             <target>/apps/aem632-packages/application/install</target>
                         </embedded>
-<!--
                         <embedded>
                             <groupId>com.aem632</groupId>
-                            <artifactId>aem-aem632-project.ui.content</artifactId>
+                            <artifactId>aem-aem632-project.conf.content-author</artifactId>
                             <type>zip</type>
-                            <target>/apps/aem632-packages/content/install</target>
+                            <target>/apps/aem632-packages/content/install.author</target>
                         </embedded>
--->
                         <embedded>
                             <groupId>com.aem632</groupId>
                             <artifactId>aem-aem632-project.ui.content-author</artifactId>
                             <type>zip</type>
                             <target>/apps/aem632-packages/content/install.author</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.aem632</groupId>
+                            <artifactId>aem-aem632-project.conf.content-publish</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aem632-packages/content/install.publish</target>
                         </embedded>
                         <embedded>
                             <groupId>com.aem632</groupId>
