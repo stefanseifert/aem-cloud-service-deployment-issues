@@ -7,6 +7,6 @@ mvn -B archetype:generate \
  -D appId="aem632" \
  -D groupId="com.aem632" \
  -D artifactId="aem-aem632-project" \
- -D frontendModule=none \
+ -D frontendModule=general \
  -D includeExamples=n \
  -D version=0.0.1-SNAPSHOT
