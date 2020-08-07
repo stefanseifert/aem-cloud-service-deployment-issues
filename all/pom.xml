@@ -70,18 +70,6 @@
                             <target>/apps/aem632-packages/content/install</target>
                         </embedded>
                         <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.content</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aem632-vendor-packages/application/install</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.config</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aem632-vendor-packages/application/install</target>
-                        </embedded>
-                        <embedded>
                             <groupId>com.adobe.acs</groupId>
                             <artifactId>acs-aem-commons-ui.apps</artifactId>
                             <type>zip</type>
@@ -195,18 +183,6 @@
             <groupId>com.aem632</groupId>
             <artifactId>aem-aem632-project.ui.content</artifactId>
             <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.content</artifactId>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.config</artifactId>
             <type>zip</type>
         </dependency>
 

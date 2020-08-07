@@ -74,18 +74,6 @@
                             <target>/apps/aem632/install</target>
                         </embedded>
                     </embeddeds>
-                    <subPackages>
-                    </subPackages>
-                    <dependencies>
-                        <dependency>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.content</artifactId>
-                        </dependency>
-                        <dependency>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.config</artifactId>
-                        </dependency>
-                    </dependencies>
                 </configuration>
             </plugin>
             <plugin>
