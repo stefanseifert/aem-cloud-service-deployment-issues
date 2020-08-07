@@ -81,18 +81,6 @@
                             <type>zip</type>
                             <target>/apps/aem632-packages/content/install.publish</target>
                         </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.content</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aem632-vendor-packages/application/install</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.config</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aem632-vendor-packages/application/install</target>
-                        </embedded>
                     </embeddeds>
                     <subPackages>
                     </subPackages>
