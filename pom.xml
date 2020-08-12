@@ -85,7 +85,7 @@
                         <configuration>
                             <rules>
                                 <requireMavenVersion>
-                                    <version>[3.3.9,)</version>
+                                    <version>[3.6.1,)</version>
                                 </requireMavenVersion>
                                 <requireJavaVersion>
                                     <message>Project must be compiled
