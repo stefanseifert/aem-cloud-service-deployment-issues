@@ -17,6 +17,8 @@ package com.aem632.core.models;
 
 import static org.apache.sling.api.resource.ResourceResolver.PROPERTY_RESOURCE_TYPE;
 
+import java.util.Optional;
+
 import javax.annotation.PostConstruct;
 
 import org.apache.sling.api.resource.Resource;
@@ -29,13 +31,12 @@ import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.apache.sling.settings.SlingSettingsService;
 
+import com.adobe.cq.wcm.core.components.models.datalayer.ComponentData;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 
-import java.util.Optional;
-
 @Model(adaptables = Resource.class)
-public class HelloWorldModel {
+public class HelloWorldModel implements ComponentData {
 
     @ValueMapValue(name=PROPERTY_RESOURCE_TYPE, injectionStrategy=InjectionStrategy.OPTIONAL)
     @Default(values="No resourceType")
@@ -58,13 +59,19 @@ public class HelloWorldModel {
                 .map(Page::getPath).orElse("");
 
         message = "Hello World!\n"
-            + "Resource type is: " + resourceType + "\n"
+            + "Resource type is: " + getType() + "\n"
             + "Current page is:  " + currentPagePath + "\n"
-            + "This is instance: " + settings.getSlingId() + "\n";
+            + "This is instance: " + settings.getSlingId() + "\n"
+            + "Data Layer interface: " + ComponentData.class.getName() + "\n";
     }
 
     public String getMessage() {
         return message;
+    }
+
+    @Override
+    public String getType() {
+      return currentResource.getResourceType();
     }
 
 }
