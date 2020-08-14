@@ -73,6 +73,10 @@
                             <artifactId>aem-aem632-project.core</artifactId>
                             <target>/apps/aem632/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>io.wcm</groupId>
+                            <target>/apps/aem632/install</target>
+                        </embedded>
                     </embeddeds>
                 </configuration>
             </plugin>

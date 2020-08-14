@@ -106,6 +106,58 @@ Import-Package: javax.annotation;version=0.0.0,*
             <artifactId>core.wcm.components.core</artifactId>
             <scope>compile</scope>
         </dependency>
+
+        <dependency>
+          <groupId>io.wcm</groupId>
+          <artifactId>io.wcm.sling.models</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>io.wcm</groupId>
+          <artifactId>io.wcm.sling.commons</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>io.wcm</groupId>
+          <artifactId>io.wcm.handler.commons</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>io.wcm</groupId>
+          <artifactId>io.wcm.handler.url</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>io.wcm</groupId>
+          <artifactId>io.wcm.handler.link</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>io.wcm</groupId>
+          <artifactId>io.wcm.handler.media</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>io.wcm</groupId>
+          <artifactId>io.wcm.handler.richtext</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>io.wcm</groupId>
+          <artifactId>io.wcm.wcm.commons</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>io.wcm</groupId>
+          <artifactId>io.wcm.wcm.core.components</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>io.wcm</groupId>
+          <artifactId>io.wcm.wcm.ui.granite</artifactId>
+          <scope>compile</scope>
+        </dependency>
+
         <!-- Testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
