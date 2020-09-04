@@ -1,0 +1,20 @@
+{
+  "resource.resolver.log.unclosed":false,
+  "resource.resolver.manglenamespaces":true,
+  "resource.resolver.map.observation":[
+    "/libs","/apps","/content","/etc","/conf"
+  ],
+  "resource.resolver.mapping":[
+    "/:/"
+  ],
+  "resource.resolver.searchpath":[
+    "/apps","/libs"
+  ],
+  "resource.resolver.vanitypath.blacklist":[
+    "/content/usergenerated"
+  ],
+  "resource.resolver.vanitypath.whitelist":[
+    "/apps/","/libs/","/content/"
+  ],  
+  "resource.resolver.map.location":"/apps/etc/map"
+}
