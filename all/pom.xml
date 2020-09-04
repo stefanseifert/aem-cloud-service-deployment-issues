@@ -63,6 +63,12 @@
                             <type>zip</type>
                             <target>/apps/aem632-packages/content/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>com.aem632</groupId>
+                            <artifactId>aem-aem632-project.ui.map</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aem632-packages/content/install.publish</target>
+                        </embedded>
                     </embeddeds>
                     <subPackages>
                     </subPackages>
@@ -164,6 +170,12 @@
         <dependency>
             <groupId>com.aem632</groupId>
             <artifactId>aem-aem632-project.ui.content</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.aem632</groupId>
+            <artifactId>aem-aem632-project.ui.map</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>

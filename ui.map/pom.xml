@@ -30,7 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem-aem632-project.ui.content</artifactId>
+    <artifactId>aem-aem632-project.ui.map</artifactId>
     <packaging>content-package</packaging>
     <name>aem632 - UI content</name>
     <description>UI content package for aem632</description>
@@ -49,19 +49,12 @@
                 <extensions>true</extensions>
                 <configuration>
                     <group>com.aem632</group>
-                    <name>aem-aem632-project.ui.content</name>
+                    <name>aem-aem632-project.ui.map</name>
                     <packageType>content</packageType>
                     <accessControlHandling>merge</accessControlHandling>
                     <properties>
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
-                    <dependencies>
-                        <dependency>
-                            <groupId>com.aem632</groupId>
-                            <artifactId>aem-aem632-project.ui.apps</artifactId>
-                            <version>${project.version}</version>
-                        </dependency>
-                    </dependencies>
                 </configuration>
             </plugin>
             <plugin>
@@ -76,25 +69,4 @@
         </plugins>
     </build>
 
-    <!-- ====================================================================== -->
-    <!-- D E P E N D E N C I E S                                                -->
-    <!-- ====================================================================== -->
-    <dependencies>
-        <dependency>
-            <groupId>com.aem632</groupId>
-            <artifactId>aem-aem632-project.core</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.aem632</groupId>
-            <artifactId>aem-aem632-project.ui.apps</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.aem</groupId>
-            <artifactId>uber-jar</artifactId>
-            <classifier>apis</classifier>
-        </dependency>
-    </dependencies>
 </project>
