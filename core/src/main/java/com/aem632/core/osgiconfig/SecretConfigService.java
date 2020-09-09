@@ -2,6 +2,7 @@
 package com.aem632.core.osgiconfig;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.osgi.service.component.annotations.Activate;
@@ -54,7 +55,7 @@ public class SecretConfigService {
    * @return Items
    */
   public List<Item> getItems() {
-    return this.items;
+    return Collections.unmodifiableList(this.items);
   }
 
 }
