@@ -23,4 +23,11 @@
         <p class="cmp-helloworld__item-label">Model message:</p>
         <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
     </div>
+    <div class="cmp-helloworld__item" data-sly-use.configs="com.aem632.core.osgiconfig.SecretConfigModel"
+        data-sly-test="${configs.items}">
+        <p class="cmp-helloworld__item-label">Secret Configs:</p>
+        <table data-sly-list="${configs.items}">
+          <tr><th style="text-align:left">${item.label}</th><td><code>${item.value}</code></td></tr>
+        </table>
+    </div>
 </div>
