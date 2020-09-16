@@ -17,6 +17,8 @@ package com.aem632.core.models;
 
 import static org.apache.sling.api.resource.ResourceResolver.PROPERTY_RESOURCE_TYPE;
 
+import java.util.Optional;
+
 import javax.annotation.PostConstruct;
 
 import org.apache.sling.api.resource.Resource;
@@ -31,8 +33,6 @@ import org.apache.sling.settings.SlingSettingsService;
 
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
-
-import java.util.Optional;
 
 @Model(adaptables = Resource.class)
 public class HelloWorldModel {
@@ -60,7 +60,7 @@ public class HelloWorldModel {
         message = "Hello World!\n"
             + "Resource type is: " + resourceType + "\n"
             + "Current page is:  " + currentPagePath + "\n"
-            + "This is instance: " + settings.getSlingId() + "\n";
+            + "This is instance: " + settings.getSlingId() + " (isBlank: " + settings.getSlingId().isBlank() + ")\n";
     }
 
     public String getMessage() {
