@@ -53,6 +53,29 @@
 
     <build>
         <plugins>
+
+          <!-- Switch to Java 11 -->
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-toolchains-plugin</artifactId>
+              <version>1.1</version>
+              <executions>
+                  <execution>
+                      <goals>
+                          <goal>toolchain</goal>
+                      </goals>
+                  </execution>
+              </executions>
+              <configuration>
+                  <toolchains>
+                      <jdk>
+                          <version>11</version>
+                          <vendor>oracle</vendor>
+                     </jdk>
+                  </toolchains>
+              </configuration>
+          </plugin>
+
             <!-- Maven Release Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -85,11 +108,10 @@
                         <configuration>
                             <rules>
                                 <requireMavenVersion>
-                                    <version>[3.6.1,)</version>
+                                    <version>[3.6.0,)</version>
                                 </requireMavenVersion>
                                 <requireJavaVersion>
-                                    <message>Project must be compiled
-                                        with Java 8 or higher</message>
+                                    <message>Project must be compiled with Java 8 or higher</message>
                                     <version>1.8.0</version>
                                 </requireJavaVersion>
                             </rules>
