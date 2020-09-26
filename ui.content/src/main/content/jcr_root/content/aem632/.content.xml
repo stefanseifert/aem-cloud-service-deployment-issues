@@ -4,9 +4,9 @@
     <jcr:content
         cq:allowedTemplates="[/conf/aem632/settings/wcm/templates/(?!xf-).*]"
         cq:conf="/conf/aem632"
-        cq:deviceGroups="[/etc/mobile/groups/responsive]"
         jcr:primaryType="cq:PageContent"
         jcr:title="aem632"
+        sling:configRef="/conf/aem632"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="{Long}302"
         sling:resourceType="foundation/components/redirect"
