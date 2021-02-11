@@ -41,6 +41,22 @@
                 <groupId>com.adobe.aem</groupId>
                 <artifactId>aemanalyser-maven-plugin</artifactId>
                 <extensions>true</extensions>
+              <configuration>
+                  <includeTasks>
+                      <!-- disable requirements-capabilities check - it fails with Java 11 in maven toolchain mode
+                      <includeTask>requirements-capabilities</includeTask>
+                      -->
+                      <includeTask>bundle-content</includeTask>
+                      <includeTask>bundle-resources</includeTask>
+                      <includeTask>bundle-nativecode</includeTask>
+                      <includeTask>api-regions</includeTask>
+                      <includeTask>api-regions-check-order</includeTask>
+                      <includeTask>api-regions-crossfeature-dups</includeTask>
+                      <includeTask>api-regions-exportsimports</includeTask>
+                      <includeTask>repoinit</includeTask>
+                      <includeTask>configuration-api</includeTask>
+                  </includeTasks>
+              </configuration>
             </plugin>
         </plugins>
     </build>
