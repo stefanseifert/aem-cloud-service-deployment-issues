@@ -1,5 +1,5 @@
 {
   "resource.resolver.mapping": [
-    "/content/aem632/&lt;/", "/:/"
+    "/content/aem632/</", "/:/"
   ]
 }

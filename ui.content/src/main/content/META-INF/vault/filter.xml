@@ -2,6 +2,6 @@
 <workspaceFilter version="1.0">
     <filter root="/conf/aem632" mode="merge"/>
     <filter root="/content/aem632" mode="merge"/>
-    <filter root="/content/dam/aem632" mode="merge"/>
+    <filter root="/content/dam/aem632/asset.jpg" mode="merge"/>
     <filter root="/content/experience-fragments/aem632" mode="merge"/>
 </workspaceFilter>
