@@ -60,6 +60,22 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-help-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                  <execution>
+                    <id>system</id>
+                    <phase>validate</phase>
+                    <goals>
+                      <goal>system</goal>
+                    </goals>
+                  </execution>
+                </executions>
+            </plugin>
+
+
             <!-- Maven Release Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
