@@ -23,4 +23,28 @@
         <p class="cmp-helloworld__item-label">Model message:</p>
         <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
     </div>
+    
+    <h2>LOG BULK CREATION</h2>
+    <p>Expected: <code>n * m</code> log messages with the unique ID
+    <form action="${currentPage.contentResource.path}.bulk-create-log-messages.html" method="GET">
+      <table>
+        <tr>
+          <td>Unique ID in log messages</td>
+          <td><input name="uniqueId" type="text" value="TESTRUN01">
+        </tr>
+        <tr>
+          <td>Number of jobs (n)</td>
+          <td><input name="numberJobs" type="text" value="10">
+        </tr>
+        <tr>
+          <td>Number of messages per job (m)</td>
+          <td><input name="numberLogMessagesPerJob" type="text" value="10">
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit">
+        </tr>
+      </table>
+    </form>
+    
 </div>
