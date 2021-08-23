@@ -310,6 +310,7 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Teaser"
                     sling:resourceType="wcm/core/components/policy/policy"
+                    showTitleType="false"
                     titleType="h3">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1575031387650>
