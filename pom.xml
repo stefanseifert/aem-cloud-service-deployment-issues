@@ -390,6 +390,56 @@ Bundle-DocURL:
                         </lifecycleMappingMetadata>
                     </configuration>
                 </plugin>
+                <!-- wcm.io Content Package Plugin -->
+                <plugin>
+                    <groupId>io.wcm.maven.plugins</groupId>
+                    <artifactId>wcmio-content-package-maven-plugin</artifactId>
+                    <version>1.8.4</version>
+                    <configuration>
+                        <serviceURL>http://${aem.host}:${aem.port}/crx/packmgr/service</serviceURL>
+                        <userId>${sling.vault.user}</userId>
+                        <password>${sling.vault.password}</password>
+                        <consoleUserId>${sling.console.user}</consoleUserId>
+                        <consolePassword>${sling.console.password}</consolePassword>
+                        <excludeFiles>
+                            <exclude>^META-INF/.*</exclude>
+                            <!-- exclude renditions that are automatically generated -->
+                            <exclude>.*/cq5dam\.thumbnail\..*</exclude>
+                        </excludeFiles>
+                        <excludeProperties>
+                            <exclude>jcr\:created</exclude>
+                            <exclude>jcr\:createdBy</exclude>
+                            <exclude>jcr\:lastModified</exclude>
+                            <exclude>jcr\:lastModifiedBy</exclude>
+                            <exclude>jcr\:uuid</exclude>
+                            <exclude>jcr\:isCheckedOut</exclude>
+                            <exclude>cq\:lastModified</exclude>
+                            <exclude>cq\:lastModifiedBy</exclude>
+                            <exclude>cq\:lastReplicated</exclude>
+                            <exclude>cq\:lastReplicatedBy</exclude>
+                            <exclude>cq\:lastReplicationAction</exclude>
+                            <exclude>cq\:lastRolledout</exclude>
+                            <exclude>cq\:lastRolledoutBy</exclude>
+                            <exclude>dam\:extracted</exclude>
+                            <exclude>dam\:sha1</exclude>
+                            <exclude>dam\:Comments</exclude>
+                            <exclude>dam\:assetState</exclude>
+                            <exclude>dam\:relativePath</exclude>
+                            <exclude>dc\:modified</exclude>
+                        </excludeProperties>
+                        <excludeMixins>
+                            <exclude>mix\:versionable</exclude>
+                            <exclude>mix\:referenceable</exclude>
+                            <exclude>cq\:Taggable</exclude>
+                            <exclude>cq\:ReplicationStatus</exclude>
+                        </excludeMixins>
+                        <unpackDirectory>src/main/content</unpackDirectory>
+                        <unpackDeleteDirectories>
+                            <directory>jcr_root</directory>
+                        </unpackDeleteDirectories>
+                        <failOnMissingEmbed>true</failOnMissingEmbed>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
