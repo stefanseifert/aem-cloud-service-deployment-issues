@@ -58,12 +58,24 @@
                             <groupId>com.aem632</groupId>
                             <artifactId>aem-aem632-project.ui.apps</artifactId>
                             <type>zip</type>
-                            <target>/apps/aem632-packages/application/install</target>
+                            <target>/apps/aem632-packages/application/install.author</target>
                         </embedded>
                         <embedded>
                             <groupId>com.aem632</groupId>
                             <artifactId>aem-aem632-project.core</artifactId>
-                            <target>/apps/aem632-packages/application/install</target>
+                            <target>/apps/aem632-packages/application/install.author</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>io.wcm</groupId>
+                            <artifactId>io.wcm.caconfig.editor</artifactId>
+                            <target>/apps/aem632-packages/application/install.author</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>io.wcm</groupId>
+                            <artifactId>io.wcm.caconfig.editor</artifactId>
+                            <classifier>content</classifier>
+                            <type>zip</type>
+                            <target>/apps/aem632-packages/application/install.author</target>
                         </embedded>
                         <embedded>
                             <groupId>com.aem632</groupId>
@@ -75,7 +87,7 @@
                             <groupId>com.aem632</groupId>
                             <artifactId>aem-aem632-project.ui.config</artifactId>
                             <type>zip</type>
-                            <target>/apps/aem632-packages/application/install</target>
+                            <target>/apps/aem632-packages/application/install.author</target>
                         </embedded>
                     </embeddeds>
                 </configuration>
@@ -196,6 +208,17 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
-
+        <dependency>
+            <groupId>io.wcm</groupId>
+            <artifactId>io.wcm.caconfig.editor</artifactId>
+            <version>1.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.wcm</groupId>
+            <artifactId>io.wcm.caconfig.editor</artifactId>
+            <version>1.11.0</version>
+            <classifier>content</classifier>
+            <type>zip</type>
+        </dependency>
     </dependencies>
 </project>
