@@ -51,7 +51,7 @@ Run tests on <span style="color:green">local</span> <span style="color:orange">h
 
 <PRE>
 mvn test \
-    <span style="color:green">-Plocal-execution</span> \
+    <span style="color:green">-Pui-tests-local-execution</span> \
     <span style="color:orange">-DHEADLESS_BROWSER=true</span> \
     <span style="color:purple">-DSELENIUM_BROWSER=firefox</span> \
     <span style="color:blue">-DAEM_AUTHOR_URL=http://my-aem-author-instance.com</span> \
