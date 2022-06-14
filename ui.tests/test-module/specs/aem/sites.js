@@ -55,7 +55,7 @@ describe('AEM Sites Console', () => {
             let modifiedTitle = `modified-title-${Date.now()}`;
 
             // Change page title
-            originalTitle = browser.AEMSitesSetPageTitle(AEM_SAMPLE_PAGE_PARENT, AEM_SAMPLE_PAGE_ID, modifiedTitle);
+            originalTitle = browser.AEMSitesSetPageTitle(AEM_SAMPLE_PAGE_PARENT, AEM_SAMPLE_PAGE_ID, modifiedTitle + '-this-will-break-the-test');
 
             // Navigate to modified page
             browser.url(`${path.posix.join(AEM_SAMPLE_PAGE_PARENT, AEM_SAMPLE_PAGE_ID)}.html`);
