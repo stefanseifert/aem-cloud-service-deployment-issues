@@ -2,6 +2,10 @@
 <workspaceFilter version="1.0">
     <filter root="/conf/aem632" mode="merge"/>
     <filter root="/content/aem632" mode="merge"/>
+    <filter root="/content/dam/aem632" mode="merge">
+        <exclude pattern="/content/dam/aem632(/.*)?"/>
+        <include pattern="/content/dam/aem632/jcr:content(/.*)?"/>
+    </filter>
     <filter root="/content/dam/aem632/asset.jpg" mode="merge"/>
     <filter root="/content/experience-fragments/aem632" mode="merge"/>
 </workspaceFilter>
