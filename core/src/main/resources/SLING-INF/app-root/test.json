@@ -1,0 +1,4 @@
+{
+  "property1": "^/content/wcm-io(-\\w+)?/.+$",
+  "property2": "^/content/wcm-io(-\\\\w+)?/.+$"
+}
