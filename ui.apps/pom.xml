@@ -54,7 +54,7 @@
                     <group>com.aem632</group>
                     <name>aem-aem632-project.ui.apps</name>
                     <packageType>application</packageType>
-                    <repositoryStructurePackages>
+                                        <repositoryStructurePackages>
                         <repositoryStructurePackage>
                             <groupId>com.aem632</groupId>
                             <artifactId>aem-aem632-project.ui.apps.structure</artifactId>

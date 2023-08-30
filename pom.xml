@@ -71,7 +71,7 @@
             
     <frontend-maven-plugin.version>1.12.0</frontend-maven-plugin.version>
             
-    <core.wcm.components.version>2.21.2</core.wcm.components.version>
+    <core.wcm.components.version>2.22.12</core.wcm.components.version>
             
     <bnd.version>5.1.2</bnd.version>
             
@@ -79,7 +79,7 @@
             
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
             
-    <aem.sdk.api>2023.1.10912.20230130T173736Z-230100</aem.sdk.api>
+    <aem.sdk.api>2023.8.13239.20230824T154635Z-230702</aem.sdk.api>
             
     <aemanalyser.version>1.4.10</aemanalyser.version>
             
@@ -1061,9 +1061,21 @@ Bundle-DocURL:
                         
         <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
                         
-        <version>4.1.8</version>
+        <version>5.1.2</version>
                         
         <scope>test</scope>
+                        
+        <exclusions>
+                              
+          <exclusion>
+                                    
+            <groupId>org.apache.sling</groupId>
+                                    
+            <artifactId>org.apache.sling.scripting.api</artifactId>
+                                
+          </exclusion>
+                          
+        </exclusions>
                     
       </dependency>
                   
@@ -1073,7 +1085,31 @@ Bundle-DocURL:
                         
         <artifactId>org.apache.sling.testing.caconfig-mock-plugin</artifactId>
                         
-        <version>1.3.6</version>
+        <version>1.4.0</version>
+                        
+        <exclusions>
+                              
+          <exclusion>
+                                    
+            <groupId>commons-collections</groupId>
+                                    
+            <artifactId>commons-collections</artifactId>
+                                
+          </exclusion>
+                          
+        </exclusions>
+                    
+      </dependency>
+                  
+      <dependency>
+                        
+        <groupId>commons-collections</groupId>
+                        
+        <artifactId>commons-collections</artifactId>
+                        
+        <version>3.2.2</version>
+                        
+        <scope>provided</scope>
                     
       </dependency>
                   
@@ -1086,6 +1122,18 @@ Bundle-DocURL:
         <version>${core.wcm.components.version}</version>
                         
         <scope>test</scope>
+                        
+        <exclusions>
+                              
+          <exclusion>
+                                    
+            <groupId>org.apache.sling</groupId>
+                                    
+            <artifactId>org.apache.sling.scripting.api</artifactId>
+                                
+          </exclusion>
+                          
+        </exclusions>
                     
       </dependency>
                   

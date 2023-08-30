@@ -342,4 +342,12 @@
             </page>
         </components>
     </aem632>
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                            </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
 </jcr:root>
